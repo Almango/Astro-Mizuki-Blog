@@ -1,50 +1,75 @@
 ---
+import ImageWrapper from "../components/misc/ImageWrapper.astro";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
-import ImageWrapper from "../components/misc/ImageWrapper.astro";
 
 // 追番数据
 const animeList = [
 	{
-		title: "Lycoris Recoil",
+		title: "坂本日常",
+		status: "watching",
+		rating: 8.9,
+		cover: "assets/anime/bbrc.png",
+		description:
+			"曾有一名最强杀手，名叫坂本太郎。这个受到所有恶棍畏惧，受到所有杀手仰慕的男人...",
+		episodes: "12 episodes",
+		year: "2025-2025",
+		link: "https://www.bilibili.com/bangumi/media/md24005479",
+	},
+	{
+		title: "玉子市场",
 		status: "completed",
 		rating: 9.8,
-		cover: "assets/anime/lkls.webp",
-		description: "Girls' gunfight, flaws cannot hide its virtues.",
+		cover: "assets/anime/yzsc.jpg",
+		description:
+			"座落某个小镇的兔子商店街上，有一间日式饼店，住着一位十分喜欢饼类小吃的高中一年级女生——玉子...",
 		episodes: "12 episodes",
-		year: "2013-2023",
-		link: "https://www.bilibili.com/bangumi/media/md28338623",
+		year: "2013-2022",
+		link: "https://www.bilibili.com/bangumi/media/md116772",
 	},
 	{
-		title: "Wakaba Girl",
-		status: "watching",
-		rating: 9.5,
-		cover: "assets/anime/rynh.webp",
-		description: "The daily life of girls, sweet and healing.",
+		title: "关于前辈很烦人的事",
+		status: "completed",
+		rating: 9.8,
+		cover: "assets/anime/gyqbhfrds.png",
+		description:
+			"五十岚双叶，是入职丝卷商社刚到第二年，想要尽快独当一面的新人...",
+		episodes: "12 episodes",
+		year: "2021-2025",
+		link: "https://www.bilibili.com/bangumi/media/md28235116",
+	},
+	{
+		title: "轻音少女",
+		status: "completed",
+		rating: 9.9,
+		cover: "assets/anime/qysn.jpg",
+		description:
+			"高中一年级新生平泽唯在误将“轻音乐”当做了“轻便、简易的音乐”...",
+		episodes: "14 episodes",
+		year: "2009-2023",
+		link: "https://www.bilibili.com/bangumi/media/md28220978",
+	},
+	{
+		title: "少女前线 人形小剧场",
+		status: "completed",
+		rating: 9.4,
+		cover: "assets/anime/snqx.png",
+		description:
+			"经历过一期的绝赞好评后，《少女前线：治愈篇2》重磅来袭！唯美青春的校园生活等等...",
+		episodes: "12 episodes",
+		year: "2021-2025",
+		link: "https://www.bilibili.com/bangumi/media/md28233962",
+	},
+	{
+		title: "目隐都市的演绎者",
+		status: "completed",
+		rating: 9.6,
+		cover: "assets/anime/mydsdyyz.png",
+		description: "如月伸太郎，因为居住在其电脑中的...",
 		episodes: "12 episodes",
 		year: "2019-2023",
-		link: "https://www.bilibili.com/bangumi/play/ep288052",
-	},
-	{
-		title: "Asteroid in Love",
-		status: "watching",
-		rating: 9.2,
-		cover: "assets/anime/laxxx.webp",
-		description: "Girls encounter stars, pure love and healing.",
-		episodes: "24 episodes",
-		year: "2020-2024",
-		link: "https://www.bilibili.com/bangumi/media/md28224128",
-	},
-	{
-		title: "Gochuumon wa Usagi Desu ka??",
-		status: "completed",
-		rating: 9.0,
-		cover: "assets/anime/tz1.webp",
-		description: "A warm-hearted daily life of a group of girls.",
-		episodes: "12 episodes",
-		year: "2022-2023",
-		link: "https://www.bilibili.com/bangumi/media/md2762",
+		link: "https://www.bilibili.com/bangumi/media/md28220587",
 	},
 ];
 

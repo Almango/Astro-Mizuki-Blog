@@ -1,54 +1,86 @@
-# About This Site
-
+# 关于本站
+<!-- 
 This website is built with the **Astro** framework using the [Mizuki](https://github.com/matsuzaka-yuki/mizuki) theme.
 
-::github{repo="matsuzaka-yuki/Mizuki"}
+::github{repo="matsuzaka-yuki/Mizuki"} -->
+```json
+{
+  "personalInfo": {
+    "name": "Almango",
+    "age": 18♀,
+    "occupation": "学生",
+    "location": "CN",
+    "E-mail": "sliveralmango@outlook.com"
+  }
+}
+```
+<!-- >赛博旅人你们好OwO，我叫啊芒果（Almango）
+>
+>是个爱躺平，游手好闲，整日沉浸在幻想的废物大学生。
+>
+>绎眼丁真鉴定为：<span><a href="https://www.16personalities.com/ch/isfp-%E4%BA%BA%E6%A0%BC">ISFP-T</a></span>人格
+> -->
 
-## 🌟 Theme Features
+#### 👉联系方式
 
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
+>邮箱：hh1830314643@163.com
 
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
+#### 🎯我的技术栈
+>好奇的目光常常可以看到比他所希望看到的东西更多   &emsp;&emsp;&emsp;             --[德国]莱辛
 
-### 🌐 Internationalization
-- **Multi-language Support** - Real-time translation capabilities
-- **Auto Language Detection** - Detects user preferences automatically
-- **Client-side Translation** - Powered by Edge Translate technology
-- **10+ Languages Supported** - EN, ZH-CN, ZH-TW, JA, KO, ES, TH, VI, ID, TR
 
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
+<b>🥝Skills：</b>
 
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
+*These are the skills I have mastered, and for an Internet enthusiast, every skill is called my badge.*
 
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
+<img src="http://testingcf.jsdelivr.net/gh/Almango/Blog_imgbed@main/about/skill.svg" style="float: left; margin-right: 10px;" /><br><br><br><br>
+                                                                                     
+                                                                                           
+<b>🥝Tools：</b>
 
----
+*These are the tools I use daily life. Only by practicing the sword to the extreme can I give full play to its better effect.*
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+<img src="http://testingcf.jsdelivr.net/gh/Almango/Blog_imgbed@main/about/tool.svg" style="float: left; margin-right: 10px;" /><br><br><br><br>
+                                                                           
+
+
+#### 🎸个人爱好
+
+🥝1 . 爱玩的游戏：CS2，战地5，我的世界，少女前线2
+
+🎵2 . 爱听Little End和C418的歌，口味偏向于Rock，EDM，Chillhop。
+
+🍕3 . 喜欢吃冰激凌，雪糕，和各种各样的水果。
+
+🎈4 . 比较社恐，不太喜欢外出，以前喜欢看番，现在很少看了......
+
+
+
+#### 🍚网名的由来
+
+**`Almango`**：这个名称是我无意中得出的，有什么含义呢？我们把它拆开来：A就是英文“一个”的意思，L是Little的首字母，Mango即 "芒果" 的意思，合起来就是："a little mango"（一个小芒果），看起来挺有意思的，可以看得出来我有多么喜欢芒果，哈哈，取名就是这么随性😜😜😜。
+
+…………
+
+## 关于本站
+
+**框架**：`Astro 5.12.8`
+
+**主题**：`Mizuki 3.3`
+
+**部署与托管**：`Github` + `Vercel`
+
+**建站时间**：2024年1月23日
+
+**建站目的**：搭建该博客的初衷是为了给自己提供一个记录日常生活和学习的平台
+
+**样式追求**：个人行使的是`简洁主义`，所以本站尽可能的保持页面整洁。
+<!-- 【样式灵感来源：[贰猹の小窝](https://noionion.top/)】 -->
+**声明**：`本站中的部分图片或其他资源来源于网络，如果有发生侵权请邮件联系我删除！`
+
+**域名**：[almango.cn](almango.cn) （在雨云申请的，个人觉得还蛮便宜）
+
+**魔改主题**：<del>[https://github.com/Almango/Hexo-butterfly_mogai](https://github.com/Almango/Hexo-butterfly_mogai)</del>
+
+
+<!-- ::github{repo="matsuzaka-yuki/Mizuki"} -->

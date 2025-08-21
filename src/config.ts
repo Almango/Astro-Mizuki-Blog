@@ -13,20 +13,20 @@ import { LinkPreset } from "./types/config";
 import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 
 // Define site language
-const SITE_LANG = "en"; // Language code, e.g., 'en', 'zh_CN', 'ja', etc.
+const SITE_LANG = "zh_CN"; // Language code, e.g., 'en', 'zh_CN', 'ja', etc.
 
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
+	title: "Almango",
+	subtitle: "天真永不消逝，浪漫至死不渝",
 
 	lang: SITE_LANG,
 
 	themeColor: {
-		hue: 210, // Default hue for theme color, range from 0 to 360. e.g., red: 0, cyan: 200, teal: 250, pink: 345
+		hue: 170, // Default hue for theme color, range from 0 to 360. e.g., red: 0, cyan: 200, teal: 250, pink: 345
 		fixed: false, // Hide theme color picker for visitors
 	},
 	translate: {
-		enable: true, // Enable translation feature
+		enable: false, // Enable translation feature
 		service: "client.edge", // Use Edge browser translation service
 		defaultLanguage: getTranslateLanguageFromConfig(SITE_LANG), // Automatically set default translation language based on site language
 		showSelectTag: false, // Don't show default language selection dropdown, use custom button
@@ -40,13 +40,11 @@ export const siteConfig: SiteConfig = {
 		// Support single image or image array, carousel is automatically enabled when array length > 1
 		src: {
 			desktop: [
-				"assets/desktop-banner/1.webp",
-				"assets/desktop-banner/2.webp",
-				"assets/desktop-banner/3.webp",
-				"assets/desktop-banner/4.webp",
-				"assets/desktop-banner/5.webp",
-				"assets/desktop-banner/6.webp",
-				"assets/desktop-banner/7.webp",
+				"assets/desktop-banner/1.jpg",
+				"assets/desktop-banner/2.jpg",
+				"assets/desktop-banner/3.jpg",
+				"assets/desktop-banner/4.jpg",
+				"assets/desktop-banner/5.jpg",
 			], // Desktop banner images
 			mobile: [
 				"assets/mobile-banner/1.webp",
@@ -94,7 +92,7 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	toc: {
-		enable: true, // Enable table of contents feature
+		enable: false, // Enable table of contents feature
 		depth: 3, // TOC depth, 1-6, 1 means only show h1 headings, 2 means show h1 and h2 headings, and so on
 	},
 	favicon: [
@@ -111,45 +109,46 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
 		{
-			name: "Links",
-			url: "/links/",
-			children: [
-				{
-					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
-					external: true,
-				},
-				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
-					external: true,
-				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-				},
-			],
+			name: "社交",
+			url: "/content/",
+			children: [LinkPreset.Friends],
 		},
 		{
-			name: "My",
+			name: "我的",
 			url: "/content/",
 			children: [LinkPreset.Anime, LinkPreset.Diary, LinkPreset.Gallery],
 		},
-		{
-			name: "About",
-			url: "/content/",
-			children: [LinkPreset.About, LinkPreset.Friends],
-		},
+		LinkPreset.About,
+		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
+		// {
+		// 	name: "更多",
+		// 	url: "/links/",
+		// 	children: [
+		// 		{
+		// 			name: "GitHub",
+		// 			url: "https://github.com/matsuzaka-yuki/Mizuki",
+		// 			external: true,
+		// 		},
+		// 		{
+		// 			name: "Bilibili",
+		// 			url: "https://space.bilibili.com/701864046",
+		// 			external: true,
+		// 		},
+		// 		{
+		// 			name: "Gitee",
+		// 			url: "https://gitee.com/matsuzakayuki/Mizuki",
+		// 			external: true,
+		// 		},
+		// 	],
+		// },
 	],
 };
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.jpg", // Relative to /src directory. If starts with '/', relative to /public directory
-	name: "Mizuki",
-	bio: "This is a description",
+	name: "Almango",
+	bio: "天真永不消逝，浪漫至死不渝。",
 	links: [
 		{
 			name: "Bilibli",
@@ -184,7 +183,7 @@ export const licenseConfig: LicenseConfig = {
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// Note: Some styles (like background color) have been overridden, see astro.config.mjs file.
 	// Please choose a dark theme as this blog theme currently only supports dark backgrounds
-	theme: "github-dark",
+	theme: "dracula",
 };
 
 export const commentConfig: CommentConfig = {
