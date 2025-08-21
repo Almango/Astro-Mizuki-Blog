@@ -62,18 +62,18 @@ export const siteConfig: SiteConfig = {
 		carousel: {
 			enable: true, // When true: enable carousel for multiple images. When false: randomly display one image from the array
 
-			interval: 1, // Carousel interval time (seconds)
+			interval: 5, // Carousel interval time (seconds)
 		},
 
 		homeText: {
 			enable: true, // Display custom text on homepage
-			title: "Mizuki", // Homepage banner main title
+			title: "Almango", // Homepage banner main title
 
 			subtitle: [
-				"One demo website",
-				"Carousel Text1",
-				"Carousel Text2",
-				"Carousel Text3",
+				"天真永不消逝，浪漫至死不渝。",
+				"君の前前前世から仆は 君を探しはじめたよ.",
+				"欲买桂花同载酒，终不似，少年游。",
+				"Variety is the spice of life.",
 			], // Homepage banner subtitle, supports multiple texts
 			typewriter: {
 				enable: true, // Enable subtitle typewriter effect
@@ -315,7 +315,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		//hidden:不显示侧边栏 sidebar:显示侧边栏
 		layout: {
 			// 移动端：抽屉模式
-			mobile: "sidebar",
+			mobile: "hidden",
 			// 平板端：显示侧边栏
 			tablet: "sidebar",
 			// 桌面端：显示侧边栏
