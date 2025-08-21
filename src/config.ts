@@ -97,11 +97,11 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		// Leave empty to use default favicon
-		// {
-		//   src: '/favicon/icon.png',    // Icon file path
-		//   theme: 'light',              // Optional, specify theme 'light' | 'dark'
-		//   sizes: '32x32',              // Optional, icon size
-		// }
+		{
+		  src: '/favicon/icon.png',    // Icon file path
+		  theme: 'light',              // Optional, specify theme 'light' | 'dark'
+		  sizes: '32x32',              // Optional, icon size
+		}
 	],
 };
 
@@ -189,7 +189,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 export const commentConfig: CommentConfig = {
 	enable: false, // Enable the comment function. When it is set to false, the comment component will not be displayed in the article area.
 	twikoo: {
-		envId: "https://twikoo.vercel.app",
+		envId: "https://www.almango.fun",
 	},
 };
 
@@ -315,7 +315,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		//hidden:不显示侧边栏 sidebar:显示侧边栏
 		layout: {
 			// 移动端：抽屉模式
-			mobile: "hidden",
+			mobile: "sidebar",
 			// 平板端：显示侧边栏
 			tablet: "sidebar",
 			// 桌面端：显示侧边栏
