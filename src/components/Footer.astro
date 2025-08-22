@@ -16,6 +16,11 @@ const currentYear = new Date().getFullYear();
         <p style="padding:10px">🌸樱ICP备:<a href="https://icp.sakura.ink/">2508210339</a></p>
     </div>
     <div class="transition text-50 text-sm text-center">
+        {profileConfig.icpEnable && profileConfig.icp && (
+            <>
+                <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">{profileConfig.icp}</a><br>
+            </>
+        )}
     <div style="display:flex;flex-direction: row;flex-wrap: wrap;justify-content: center;">
     
     <a href="https://ipw.cn/ssl/?site=ipw.cn" title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a>
@@ -29,7 +34,7 @@ const currentYear = new Date().getFullYear();
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href={url('sitemap-index.xml')}>Sitemap</a><br>
         Powered by
         <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://astro.build">Astro</a> &
-        <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/matsuzaka-yuki/mizuki">Mizuki</a><br>
+        <a class="transition link text-[var(--primary)] font-medium" target="_blank" href="https://github.com/matsuzaka-yuki/mizuki">Mizuki v3.4</a><br>
         
 
     </div>

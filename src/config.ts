@@ -107,6 +107,7 @@ export const siteConfig: SiteConfig = {
 export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
+		LinkPreset.Series, //增加系列
 		LinkPreset.Archive,
 		{
 			name: "社交",
@@ -165,12 +166,14 @@ export const profileConfig: ProfileConfig = {
 			url: "https://github.com/matsuzaka-yuki",
 		},
 	],
-	// Umami统计部份，记得在layout插入Umami的head标签
+	// Umami统计部份，记得在layout插入Umami的脚本
 	umami: {
 		enable: false, // 是否显示umami统计
 		shareId: "", //填入共享URL最后面那一串  比如：https://eu.umami.is/api/share/2dKQ5T0WrUn6AYtr 你就填入2dKQ5T0WrUn6AYtr
 		region: "eu", //Umami有两个区域，按需选择即可  比如：https://eu.umami.is 你就填入eu
 	},
+	icp: "填写ICP备案号",
+	icpEnable: false,
 };
 
 export const licenseConfig: LicenseConfig = {
