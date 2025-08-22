@@ -4,12 +4,14 @@ This website is built with the **Astro** framework using the [Mizuki](https://gi
 
 ::github{repo="matsuzaka-yuki/Mizuki"} -->
 ```json
+// 个人介绍
 {
-  "personalInfo": {
+  "PersonalInfo": {
     "name": "Almango",
     "age": 18♀,
     "occupation": "学生",
     "location": "CN",
+    "personalities": "ISFP",
     "E-mail": "sliveralmango@outlook.com"
   }
 }
@@ -20,10 +22,6 @@ This website is built with the **Astro** framework using the [Mizuki](https://gi
 >
 >绎眼丁真鉴定为：<span><a href="https://www.16personalities.com/ch/isfp-%E4%BA%BA%E6%A0%BC">ISFP-T</a></span>人格
 > -->
-
-#### 👉联系方式
-
->邮箱：hh1830314643@163.com
 
 #### 🎯我的技术栈
 >好奇的目光常常可以看到比他所希望看到的东西更多   &emsp;&emsp;&emsp;             --[德国]莱辛

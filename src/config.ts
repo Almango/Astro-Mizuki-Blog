@@ -43,17 +43,16 @@ export const siteConfig: SiteConfig = {
 				"assets/desktop-banner/1.jpg",
 				"assets/desktop-banner/2.jpg",
 				"assets/desktop-banner/3.jpg",
-				"assets/desktop-banner/4.jpg",
+				"assets/desktop-banner/4.png",
 				"assets/desktop-banner/5.jpg",
+				"assets/desktop-banner/6.jpg",
 			], // Desktop banner images
 			mobile: [
-				"assets/mobile-banner/1.webp",
-				"assets/mobile-banner/2.webp",
-				"assets/mobile-banner/3.webp",
-				"assets/mobile-banner/4.webp",
-				"assets/mobile-banner/5.webp",
-				"assets/mobile-banner/6.webp",
-				"assets/mobile-banner/7.webp",
+				"assets/mobile-banner/1.avif",
+				"assets/mobile-banner/2.avif",
+				"assets/mobile-banner/3.png",
+				"assets/mobile-banner/4.avif",
+				"assets/mobile-banner/5.avif",
 			], // Mobile banner images
 		}, // Use local banner images
 
@@ -67,7 +66,7 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // Display custom text on homepage
-			title: "Almango", // Homepage banner main title
+			title: "ALMANGO", // Homepage banner main title
 
 			subtitle: [
 				"天真永不消逝，浪漫至死不渝。",
@@ -98,10 +97,10 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// Leave empty to use default favicon
 		{
-		  src: '/favicon/icon.jpg',    // Icon file path
-		  theme: 'light',              // Optional, specify theme 'light' | 'dark'
-		  sizes: '32x32',              // Optional, icon size
-		}
+			src: "/favicon/icon.jpg", // Icon file path
+			theme: "light", // Optional, specify theme 'light' | 'dark'
+			sizes: "32x32", // Optional, icon size
+		},
 	],
 };
 
@@ -146,7 +145,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.jpg", // Relative to /src directory. If starts with '/', relative to /public directory
+	avatar: "assets/images/avatar.png", // Relative to /src directory. If starts with '/', relative to /public directory
 	name: "Almango",
 	bio: "天真永不消逝，浪漫至死不渝。",
 	links: [
@@ -187,9 +186,9 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: false, // Enable the comment function. When it is set to false, the comment component will not be displayed in the article area.
+	enable: true, // Enable the comment function. When it is set to false, the comment component will not be displayed in the article area.
 	twikoo: {
-		envId: "https://www.almango.fun",
+		envId: "https://www.almango.fun/",
 	},
 };
 
