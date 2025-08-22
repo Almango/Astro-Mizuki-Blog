@@ -82,7 +82,9 @@ export enum LinkPreset {
 	Anime = 4,
 	Diary = 5,
 	Gallery = 6,
-	Series = 7,
+	Projects = 7,
+	Skills = 8,
+	Timeline = 9,
 }
 
 export type NavBarLink = {
@@ -110,8 +112,6 @@ export type ProfileConfig = {
 		shareId: string;
 		region: string;
 	};
-	icp?: string;
-	icpEnable?: boolean;
 };
 
 export type LicenseConfig = {
@@ -145,7 +145,6 @@ export type BlogPostData = {
 	tags: string[];
 	draft?: boolean;
 	image?: string;
-	series?: string;
 	category?: string;
 	pinned?: boolean;
 	prevTitle?: string;
@@ -175,6 +174,11 @@ export type AnnouncementConfig = {
 
 export type MusicPlayerConfig = {
 	enable: boolean; // 是否启用音乐播放器功能
+};
+
+export type FooterConfig = {
+	enable: boolean; // 是否启用Footer HTML注入功能
+	customHtml?: string; // 自定义HTML内容，用于添加备案号等信息
 };
 
 // 组件配置类型定义
