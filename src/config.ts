@@ -97,7 +97,7 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// Leave empty to use default favicon
 		{
-			src: "/img/icon.jpg", // Icon file path
+			src: "/favicon/icon.jpg", // Icon file path
 			theme: "light", // Optional, specify theme 'light' | 'dark'
 			sizes: "32x32", // Optional, icon size
 		},
