@@ -43,7 +43,7 @@ git push -u origin
 ![eb2773650f59dda2b1a4a13ea66f5789.png](https://s2.loli.net/2024/07/21/k1XdxwI658uFbQW.png)
 
 ## 更新项目
-1 . 如果要更新项目的话，也很简单。我们只需要重新输入以下命令即可
+1 . 如果要更新项目的话，也很简单。我们只需要重新输入以下命令即可。
 
 ```bash
 git add .
