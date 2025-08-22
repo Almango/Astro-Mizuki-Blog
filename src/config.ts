@@ -19,17 +19,17 @@ import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
+	title: "Almango",
+	subtitle: "天真永不消逝，浪漫至死不渝",
 
 	lang: SITE_LANG,
 
 	themeColor: {
-		hue: 210, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
+		hue: 170, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
 		fixed: false, // 对访问者隐藏主题色选择器
 	},
 	translate: {
-		enable: true, // 启用翻译功能
+		enable: false, // 启用翻译功能
 		service: "client.edge", // 使用 Edge 浏览器翻译服务
 		defaultLanguage: getTranslateLanguageFromConfig(SITE_LANG), // 根据站点语言自动设置默认翻译语言
 		showSelectTag: false, // 不显示默认语言选择下拉菜单，使用自定义按钮
@@ -43,22 +43,19 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"assets/desktop-banner/1.webp",
-				"assets/desktop-banner/2.webp",
-				"assets/desktop-banner/3.webp",
-				"assets/desktop-banner/4.webp",
-				"assets/desktop-banner/5.webp",
-				"assets/desktop-banner/6.webp",
-				"assets/desktop-banner/7.webp",
+				"assets/desktop-banner/1.jpg",
+				"assets/desktop-banner/2.jpg",
+				"assets/desktop-banner/3.jpg",
+				"assets/desktop-banner/4.png",
+				"assets/desktop-banner/5.jpg",
+				"assets/desktop-banner/6.jpg",
 			], // 桌面横幅图片
 			mobile: [
-				"assets/mobile-banner/1.webp",
-				"assets/mobile-banner/2.webp",
-				"assets/mobile-banner/3.webp",
-				"assets/mobile-banner/4.webp",
-				"assets/mobile-banner/5.webp",
-				"assets/mobile-banner/6.webp",
-				"assets/mobile-banner/7.webp",
+				"assets/mobile-banner/1.avif",
+				"assets/mobile-banner/2.avif",
+				"assets/mobile-banner/3.png",
+				"assets/mobile-banner/4.avif",
+				"assets/mobile-banner/5.avif",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -67,18 +64,18 @@ export const siteConfig: SiteConfig = {
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
 
-			interval: 1, // 轮播间隔时间（秒）
+			interval: 5, // 轮播间隔时间（秒）
 		},
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "Mizuki", // 主页横幅主标题
+			title: "ALMANGO", // 主页横幅主标题
 
 			subtitle: [
-				"One demo website",
-				"Carousel Text1",
-				"Carousel Text2",
-				"Carousel Text3",
+				"天真永不消逝，浪漫至死不渝。",
+				"君の前前前世から仆は 君を探しはじめたよ.",
+				"欲买桂花同载酒，终不似，少年游。",
+				"Variety is the spice of life.",
 			], // 主页横幅副标题，支持多文本
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -102,11 +99,11 @@ export const siteConfig: SiteConfig = {
 	},
 	favicon: [
 		// 留空以使用默认 favicon
-		// {
-		//   src: '/favicon/icon.png',    // 图标文件路径
-		//   theme: 'light',              // 可选，指定主题 'light' | 'dark'
-		//   sizes: '32x32',              // 可选，图标大小
-		// }
+		{
+			src: "/favicon/icon.png", // 图标文件路径
+			theme: "light", // 可选，指定主题 'light' | 'dark'
+			sizes: "32x32", // 可选，图标大小
+		},
 	],
 };
 
@@ -114,63 +111,38 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
+		LinkPreset.Friends,
 		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
-		{
-			name: "链接",
-			url: "/links/",
-			children: [
-				{
-					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
-					external: true,
-				},
-				{
-					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
-					external: true,
-				},
-				{
-					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
-					external: true,
-				},
-			],
-		},
+
 		{
 			name: "我的",
-			url: "/content/",
-			children: [LinkPreset.Anime, LinkPreset.Diary, LinkPreset.Gallery],
-		},
-		{
-			name: "关于",
-			url: "/content/",
-			children: [LinkPreset.About, LinkPreset.Friends],
-		},
-		{
-			name: "其他",
 			url: "#",
 			children: [
-				{
-					name: "项目展示",
-					url: "/projects/",
-				},
-				{
-					name: "技能展示",
-					url: "/skills/",
-				},
-				{
-					name: "时间线",
-					url: "/timeline/",
-				},
+				// {
+				// 	name: "项目展示",
+				// 	url: "/projects/",
+				// },
+				// {
+				// 	name: "技能展示",
+				// 	url: "/skills/",
+				// },
+				// {
+				// 	name: "时间线",
+				// 	url: "/timeline/",
+				// },
+				LinkPreset.Anime,
+				LinkPreset.Diary,
+				LinkPreset.Gallery,
 			],
 		},
+		LinkPreset.About,
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "Mizuki",
-	bio: "这是一个描述",
+	avatar: "assets/images/avatar.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "Almango",
+	bio: "天真永不消逝，浪漫至死不渝",
 	links: [
 		{
 			name: "Bilibli",
@@ -209,9 +181,9 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
-		envId: "https://twikoo.vercel.app",
+		envId: "https://www.almango.fun/",
 	},
 };
 
@@ -343,9 +315,9 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		//hidden:不显示侧边栏(桌面端)   drawer:抽屉模式(移动端不显示)   sidebar:显示侧边栏
 		layout: {
 			// 移动端：抽屉模式
-			mobile: "sidebar",
+			mobile: "hidden",
 			// 平板端：显示侧边栏
-			tablet: "sidebar",
+			tablet: "hidden",
 			// 桌面端：显示侧边栏
 			desktop: "sidebar",
 		},
