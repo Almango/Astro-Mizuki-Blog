@@ -13,20 +13,20 @@ import { LinkPreset } from "./types/config";
 import { getTranslateLanguageFromConfig } from "./utils/language-utils";
 
 // Define site language
-const SITE_LANG = "zh_CN"; // Language code, e.g., 'en', 'zh_CN', 'ja', etc.
+const SITE_LANG = "en"; // Language code, e.g., 'en', 'zh_CN', 'ja', etc.
 
 export const siteConfig: SiteConfig = {
-	title: "Almango",
-	subtitle: "天真永不消逝，浪漫至死不渝",
+	title: "Mizuki",
+	subtitle: "One demo website",
 
 	lang: SITE_LANG,
 
 	themeColor: {
-		hue: 170, // Default hue for theme color, range from 0 to 360. e.g., red: 0, cyan: 200, teal: 250, pink: 345
+		hue: 210, // Default hue for theme color, range from 0 to 360. e.g., red: 0, cyan: 200, teal: 250, pink: 345
 		fixed: false, // Hide theme color picker for visitors
 	},
 	translate: {
-		enable: false, // Enable translation feature
+		enable: true, // Enable translation feature
 		service: "client.edge", // Use Edge browser translation service
 		defaultLanguage: getTranslateLanguageFromConfig(SITE_LANG), // Automatically set default translation language based on site language
 		showSelectTag: false, // Don't show default language selection dropdown, use custom button
@@ -40,19 +40,22 @@ export const siteConfig: SiteConfig = {
 		// Support single image or image array, carousel is automatically enabled when array length > 1
 		src: {
 			desktop: [
-				"assets/desktop-banner/1.jpg",
-				"assets/desktop-banner/2.jpg",
-				"assets/desktop-banner/3.jpg",
-				"assets/desktop-banner/4.png",
-				"assets/desktop-banner/5.jpg",
-				"assets/desktop-banner/6.jpg",
+				"assets/desktop-banner/1.webp",
+				"assets/desktop-banner/2.webp",
+				"assets/desktop-banner/3.webp",
+				"assets/desktop-banner/4.webp",
+				"assets/desktop-banner/5.webp",
+				"assets/desktop-banner/6.webp",
+				"assets/desktop-banner/7.webp",
 			], // Desktop banner images
 			mobile: [
-				"assets/mobile-banner/1.avif",
-				"assets/mobile-banner/2.avif",
-				"assets/mobile-banner/3.png",
-				"assets/mobile-banner/4.avif",
-				"assets/mobile-banner/5.avif",
+				"assets/mobile-banner/1.webp",
+				"assets/mobile-banner/2.webp",
+				"assets/mobile-banner/3.webp",
+				"assets/mobile-banner/4.webp",
+				"assets/mobile-banner/5.webp",
+				"assets/mobile-banner/6.webp",
+				"assets/mobile-banner/7.webp",
 			], // Mobile banner images
 		}, // Use local banner images
 
@@ -61,18 +64,18 @@ export const siteConfig: SiteConfig = {
 		carousel: {
 			enable: true, // When true: enable carousel for multiple images. When false: randomly display one image from the array
 
-			interval: 5, // Carousel interval time (seconds)
+			interval: 1, // Carousel interval time (seconds)
 		},
 
 		homeText: {
 			enable: true, // Display custom text on homepage
-			title: "ALMANGO", // Homepage banner main title
+			title: "Mizuki", // Homepage banner main title
 
 			subtitle: [
-				"天真永不消逝，浪漫至死不渝。",
-				"君の前前前世から仆は 君を探しはじめたよ.",
-				"欲买桂花同载酒，终不似，少年游。",
-				"Variety is the spice of life.",
+				"One demo website",
+				"Carousel Text1",
+				"Carousel Text2",
+				"Carousel Text3",
 			], // Homepage banner subtitle, supports multiple texts
 			typewriter: {
 				enable: true, // Enable subtitle typewriter effect
@@ -91,16 +94,16 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	toc: {
-		enable: false, // Enable table of contents feature
+		enable: true, // Enable table of contents feature
 		depth: 3, // TOC depth, 1-6, 1 means only show h1 headings, 2 means show h1 and h2 headings, and so on
 	},
 	favicon: [
 		// Leave empty to use default favicon
-		{
-			src: "/favicon/icon.png", // Icon file path
-			theme: "light", // Optional, specify theme 'light' | 'dark'
-			sizes: "32x32", // Optional, icon size
-		},
+		// {
+		//   src: '/favicon/icon.png',    // Icon file path
+		//   theme: 'light',              // Optional, specify theme 'light' | 'dark'
+		//   sizes: '32x32',              // Optional, icon size
+		// }
 	],
 };
 
@@ -109,46 +112,45 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Series, //增加系列
 		LinkPreset.Archive,
+		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
 		{
-			name: "社交",
-			url: "/content/",
-			children: [LinkPreset.Friends],
+			name: "Links",
+			url: "/links/",
+			children: [
+				{
+					name: "GitHub",
+					url: "https://github.com/matsuzaka-yuki/Mizuki",
+					external: true,
+				},
+				{
+					name: "Bilibili",
+					url: "https://space.bilibili.com/701864046",
+					external: true,
+				},
+				{
+					name: "Gitee",
+					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					external: true,
+				},
+			],
 		},
 		{
-			name: "我的",
+			name: "My",
 			url: "/content/",
 			children: [LinkPreset.Anime, LinkPreset.Diary, LinkPreset.Gallery],
 		},
-		LinkPreset.About,
-		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
-		// {
-		// 	name: "更多",
-		// 	url: "/links/",
-		// 	children: [
-		// 		{
-		// 			name: "GitHub",
-		// 			url: "https://github.com/matsuzaka-yuki/Mizuki",
-		// 			external: true,
-		// 		},
-		// 		{
-		// 			name: "Bilibili",
-		// 			url: "https://space.bilibili.com/701864046",
-		// 			external: true,
-		// 		},
-		// 		{
-		// 			name: "Gitee",
-		// 			url: "https://gitee.com/matsuzakayuki/Mizuki",
-		// 			external: true,
-		// 		},
-		// 	],
-		// },
+		{
+			name: "About",
+			url: "/content/",
+			children: [LinkPreset.About, LinkPreset.Friends],
+		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.png", // Relative to /src directory. If starts with '/', relative to /public directory
-	name: "Almango",
-	bio: "天真永不消逝，浪漫至死不渝。",
+	avatar: "assets/images/avatar.jpg", // Relative to /src directory. If starts with '/', relative to /public directory
+	name: "Mizuki",
+	bio: "This is a description",
 	links: [
 		{
 			name: "Bilibli",
@@ -185,13 +187,13 @@ export const licenseConfig: LicenseConfig = {
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// Note: Some styles (like background color) have been overridden, see astro.config.mjs file.
 	// Please choose a dark theme as this blog theme currently only supports dark backgrounds
-	theme: "dracula",
+	theme: "github-dark",
 };
 
 export const commentConfig: CommentConfig = {
-	enable: true, // Enable the comment function. When it is set to false, the comment component will not be displayed in the article area.
+	enable: false, // Enable the comment function. When it is set to false, the comment component will not be displayed in the article area.
 	twikoo: {
-		envId: "https://www.almango.fun/",
+		envId: "https://twikoo.vercel.app",
 	},
 };
 

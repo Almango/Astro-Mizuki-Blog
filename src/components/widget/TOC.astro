@@ -17,7 +17,8 @@ for (const heading of headings) {
 
 const className = Astro.props.class;
 // 修复路由判断逻辑，确保在文章页面能正确显示TOC
-const isPostsRoute = Astro.url.pathname.includes("/posts/") || headings.length > 0;
+const isPostsRoute =
+	Astro.url.pathname.includes("/posts/") || headings.length > 0;
 
 const removeTailingHash = (text: string) => {
 	let lastIndexOfHash = text.lastIndexOf("#");
