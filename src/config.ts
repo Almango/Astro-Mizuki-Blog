@@ -315,7 +315,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		//hidden:不显示侧边栏(桌面端)   drawer:抽屉模式(移动端不显示)   sidebar:显示侧边栏
 		layout: {
 			// 移动端：抽屉模式
-			mobile: "hidden",
+			mobile: "drawer",
 			// 平板端：显示侧边栏
 			drawer: "sidebar",
 			// 桌面端：显示侧边栏
