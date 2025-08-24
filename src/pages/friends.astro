@@ -16,17 +16,17 @@ if (!friendsPost) {
 const { Content } = await render(friendsPost);
 const items = [
 	{
+		title: "松坂希奈子",
+		siteurl: "https://blog.mysqil.com/",
+		imgurl: "https://blog.mysqil.com/_astro/avatar.DslDo0tY_Z2tXD58.webp",
+		desc: "这个世界很大❤",
+		tags: ["Framework"],
+	},
+	{
 		title: "张洪Heo",
 		imgurl: "https://bu.dusays.com/2022/12/28/63ac2812183aa.png",
 		desc: "分享设计与科技生活",
 		siteurl: "https://blog.zhheo.com/",
-		tags: ["Framework"],
-	},
-	{
-		title: "铭心石刻",
-		imgurl: "https://blog.kouseki.cn/imgs/avatar.webp",
-		desc: "愿岁并谢，与友长兮",
-		siteurl: "https://blog.kouseki.cn/",
 		tags: ["Framework"],
 	},
 	{
@@ -95,13 +95,6 @@ const items = [
 	// 	tags: ["Framework"],
 	// },
 	{
-		title: "篱芷",
-		siteurl: "https://lizhic.cn/",
-		imgurl: "https://www.lizhic.cn/img/head.jpg",
-		desc: "唐人炎（JB）",
-		tags: ["Framework"],
-	},
-	{
 		title: "探人间",
 		siteurl: "https://www.hydsb0.com",
 		imgurl: "https://s21.ax1x.com/2025/07/13/pVlsr8S.jpg",
@@ -120,13 +113,6 @@ const items = [
 		siteurl: "https://blog.leoo.fun",
 		imgurl: "https://bu.dusays.com/2024/11/11/6731ad4c16396.jpg",
 		desc: "沙雕网友清欲的碎碎念",
-		tags: ["Framework"],
-	},
-	{
-		title: "松坂希奈子",
-		siteurl: "https://blog.mysqil.com/",
-		imgurl: "https://blog.mysqil.com/_astro/avatar.DslDo0tY_Z2tXD58.webp",
-		desc: "这个世界很大❤",
 		tags: ["Framework"],
 	},
 	{
@@ -154,29 +140,26 @@ const items = [
 	{
 		title: "ElysiumStack",
 		siteurl: "https://www.elysium-stack.cn/",
-		imgurl:
-			"https://www.elysium-stack.cn/upload/ee0757e6-ebb4-46d0-a388-660f648653ea.jpg",
+		imgurl: "https://www.elysium-stack.cn/upload/ee0757e6-ebb4-46d0-a388-660f648653ea.jpg",
 		desc: "不会摄影的设计师不是优秀的旅行家",
 		tags: ["Framework"],
 	},
+	{
+	 	title: "ZhouZhou's Blog",
+	 	siteurl: "https://zzzero.site/",
+	 	imgurl: "https://s1.imagehub.cc/images/2025/08/22/5aeabd5d7868bc9bc70af208609c7b50.jpg",
+	 	desc: "记录技术、日常",
+	 	tags: ["Framework"],
+    },
 ];
 
-function shuffleArray(array) {
-	const newArray = [...array];
-	for (let i = newArray.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1));
-		[newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-	}
-	return newArray;
-}
 
-const shuffledItems = shuffleArray(items);
 ---
 <MainGridLayout title={i18n(I18nKey.friends)} description={i18n(I18nKey.friends)}>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 my-4">
-                {shuffledItems.map((item) => (
+                {items.map((item) => (
                     <div class="flex flex-nowrap items-stretch h-28 gap-4 rounded-[var(--radius-large)]">
                         <div class="w-28 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-zinc-200 dark:bg-zinc-900">
                             <img src={item.imgurl} alt="站点头像" class="w-full h-full object-cover">
