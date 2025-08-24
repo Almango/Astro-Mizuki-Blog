@@ -72,7 +72,7 @@ git remote add upstream https://github.com/matsuzaka-yuki/Mizuki.git
 git fetch upstream
 ```
 
-6 . 合并更新到本地分支。
+6 . 合并更新到本地分支，（如果远程仓库的分支是`master`，则需要将`main`改为`master`）。
 
 ```
 git merge upstream/main
