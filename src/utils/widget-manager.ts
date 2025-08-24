@@ -1,7 +1,10 @@
-import { sidebarLayoutConfig } from "../config";
+import { sidebarLayoutConfig, sidebarLayoutConfig } from "../config";
 import type {
 	SidebarLayoutConfig,
+	SidebarLayoutConfig,
 	WidgetComponentConfig,
+	WidgetComponentConfig,
+	WidgetComponentType,
 	WidgetComponentType,
 } from "../types/config";
 
@@ -154,6 +157,11 @@ export class WidgetManager {
 			return false;
 		}
 
+		// 安全检查：确保responsive配置存在
+		if (!this.config.responsive || !this.config.responsive.layout) {
+			return true; // 默认显示侧边栏
+		}
+
 		const layoutMode = this.config.responsive.layout[deviceType];
 		return layoutMode === "sidebar";
 	}
@@ -162,6 +170,15 @@ export class WidgetManager {
 	 * 获取设备断点配置
 	 */
 	getBreakpoints() {
+		// 安全检查：确保responsive配置存在
+		if (!this.config.responsive || !this.config.responsive.breakpoints) {
+			// 返回默认断点配置
+			return {
+				mobile: 768,
+				tablet: 1024,
+				desktop: 1280,
+			};
+		}
 		return this.config.responsive.breakpoints;
 	}
 
