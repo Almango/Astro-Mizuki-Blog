@@ -95,7 +95,7 @@ export const siteConfig: SiteConfig = {
 		},
 
 		navbar: {
-			transparentMode: "full", // 导航栏透明模式："semi" 半透明加圆角，"full" 完全透明
+			transparentMode: "none", // 导航栏透明模式："semi" 半透明加圆角，"full" 完全透明
 		},
 	},
 	toc: {
@@ -188,7 +188,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 export const commentConfig: CommentConfig = {
 	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
-		envId: "https://twikoo.vercel.app",
+		envId: "https://www.almango.fun/",
 	},
 };
 

@@ -64,7 +64,8 @@ This website is built with the **Astro** framework using the [Mizuki](https://gi
 
 **框架**：`Astro 5.12.8`
 
-**主题**：`Mizuki 3.4`
+<!-- 3.3, 3.4 -->
+**主题**：`Mizuki 3.5.2`
 
 **部署与托管**：`Github` + `Vercel`
 

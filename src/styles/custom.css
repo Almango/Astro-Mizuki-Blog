@@ -1,0 +1,4 @@
+/* 导航栏下半圆角样式 */
+#navbar > div {
+    border-radius: 0 0 1rem 1rem  ;
+}
