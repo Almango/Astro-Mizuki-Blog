@@ -1,7 +1,7 @@
 /* 导航栏下半半透明样式 */
 @media (min-width: 1024px) {
-    #banner-wrapper ~ * #navbar[data-transparent-mode="semi"] > div,
-    body:has(#banner-wrapper) #navbar[data-transparent-mode="semi"] > div {
+    #banner-wrapper ~ * #navbar[data-transparent-mode="full"] > div,
+    body:has(#banner-wrapper) #navbar[data-transparent-mode="full"] > div {
         backdrop-filter: blur(20px) !important;
         background: white !important;
         border-radius: 0 0 1rem 1rem !important;
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 1023px) {
-    #banner-wrapper ~ * #navbar[data-transparent-mode="semi"][data-is-home="true"] > div, body:has(#banner-wrapper) #navbar[data-transparent-mode="semi"][data-is-home="true"] > div {
+    #banner-wrapper ~ * #navbar[data-transparent-mode="full"][data-is-home="true"] > div, body:has(#banner-wrapper) #navbar[data-transparent-mode="full"][data-is-home="true"] > div {
         backdrop-filter: blur(20px) !important;
         background: white !important;
         border-radius: 0 0 1rem 1rem !important;
