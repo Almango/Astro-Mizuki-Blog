@@ -3,6 +3,7 @@ import type {
 	CommentConfig,
 	ExpressiveCodeConfig,
 	FooterConfig,
+	FullscreenWallpaperConfig,
 	LicenseConfig,
 	MusicPlayerConfig,
 	NavBarConfig,
@@ -39,7 +40,7 @@ export const siteConfig: SiteConfig = {
 		ignoreTags: ["script", "style", "code", "pre"], // 翻译时忽略的 HTML 标签
 	},
 	banner: {
-		enable: true, // 暂时禁用横幅以提高加载速度
+		enable: false, // 暂时禁用横幅以提高加载速度
 
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
@@ -95,7 +96,7 @@ export const siteConfig: SiteConfig = {
 		},
 
 		navbar: {
-			transparentMode: "full", // 导航栏透明模式："semi" 半透明加圆角，"full" 完全透明
+			transparentMode: "semifull", // 导航栏透明模式："semi" 半透明加圆角，"full" 完全透明，"semifull" 动态透明
 		},
 	},
 	toc: {
@@ -111,6 +112,29 @@ export const siteConfig: SiteConfig = {
 		},
 	],
 };
+export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
+	enable: true, // 启用全屏壁纸功能,非Banner模式下生效
+	src: {
+		desktop: [
+			"/assets/desktop-banner/1.webp",
+			"/assets/desktop-banner/2.webp",
+			"/assets/desktop-banner/3.webp",
+		], // 桌面端壁纸图片
+		mobile: [
+			"/assets/mobile-banner/1.webp",
+			"/assets/mobile-banner/2.webp",
+			"/assets/mobile-banner/3.webp",
+		], // 移动端壁纸图片
+	},
+	position: "center", // 壁纸位置，等同于 object-position
+	carousel: {
+		enable: true, // 启用轮播
+		interval: 5, // 轮播间隔时间（秒）
+	},
+	zIndex: -1, // 层级，确保壁纸在背景层
+	opacity: 0.8, // 壁纸透明度
+	blur: 1, // 背景模糊程度
+};
 
 export const navBarConfig: NavBarConfig = {
 	links: [
@@ -122,6 +146,7 @@ export const navBarConfig: NavBarConfig = {
 		{
 			name: "我的",
 			url: "#",
+			icon: "material-symbols:more-horiz",
 			children: [
 				// {
 				// 	name: "项目展示",
@@ -238,7 +263,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			position: "top",
 			// CSS 类名，用于应用样式和动画
 			class: "onload-animation",
-			// 动画延迟时间（毫秒），用于错开动画效果 - 优化为0延迟
+			// 动画延迟时间（毫秒），用于错开动画效果
 			animationDelay: 0,
 		},
 		{
@@ -252,8 +277,8 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			position: "top",
 			// CSS 类名
 			class: "onload-animation",
-			// 动画延迟时间 - 优化为0延迟
-			animationDelay: 0,
+			// 动画延迟时间
+			animationDelay: 50,
 		},
 		{
 			// 组件类型：分类组件
@@ -266,8 +291,8 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			position: "sticky",
 			// CSS 类名
 			class: "onload-animation",
-			// 动画延迟时间 - 优化为最小延迟
-			animationDelay: 30,
+			// 动画延迟时间
+			animationDelay: 150,
 			// 响应式配置
 			responsive: {
 				// 折叠阈值：当分类数量超过5个时自动折叠
@@ -285,8 +310,8 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			position: "sticky",
 			// CSS 类名
 			class: "onload-animation",
-			// 动画延迟时间 - 优化为最小延迟
-			animationDelay: 60,
+			// 动画延迟时间
+			animationDelay: 200,
 			// 响应式配置
 			responsive: {
 				// 折叠阈值：当标签数量超过20个时自动折叠
@@ -295,14 +320,14 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		},
 	],
 
-	// 优化的默认动画配置
+	// 默认动画配置
 	defaultAnimation: {
 		// 是否启用默认动画
 		enable: true,
-		// 基础延迟时间（毫秒）- 优化为0
+		// 基础延迟时间（毫秒）
 		baseDelay: 0,
-		// 递增延迟时间（毫秒）- 优化为更小的值
-		increment: 20,
+		// 递增延迟时间（毫秒），每个组件依次增加的延迟
+		increment: 50,
 	},
 
 	// 响应式布局配置
@@ -339,17 +364,18 @@ export const sakuraConfig: SakuraConfig = {
 	},
 	speed: {
 		horizontal: {
-			min: -0.8, // 水平移动速度最小值 - 减慢速度
-			max: -0.5, // 水平移动速度最大值 - 减慢速度
+			min: -1.7, // 水平移动速度最小值
+			max: -1.2, // 水平移动速度最大值
 		},
 		vertical: {
-			min: 0.6, // 垂直移动速度最小值 - 减慢速度
-			max: 1.0, // 垂直移动速度最大值 - 减慢速度
+			min: 1.5, // 垂直移动速度最小值
+			max: 2.2, // 垂直移动速度最大值
 		},
-		rotation: 0.015, // 旋转速度 - 减慢一半
+		rotation: 0.03, // 旋转速度
 	},
 	zIndex: 100, // 层级，确保樱花在合适的层级显示
 };
+
 // 导出所有配置的统一接口
 export const widgetConfigs = {
 	profile: profileConfig,
@@ -357,4 +383,5 @@ export const widgetConfigs = {
 	music: musicPlayerConfig,
 	layout: sidebarLayoutConfig,
 	sakura: sakuraConfig,
+	fullscreenWallpaper: fullscreenWallpaperConfig,
 } as const;
