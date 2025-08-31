@@ -184,20 +184,20 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:more-horiz",
 			children: [
 				{
-					name: "项目展示",
+					name: "Minecraft",
 					url: "/mc/",
 					icon: "material-symbols:work",
 				},
 				{
-					name: "技能展示",
+					name: "我的技能",
 					url: "/skills/",
 					icon: "material-symbols:psychology",
 				},
-				{
-					name: "时间线",
-					url: "/timeline/",
-					icon: "material-symbols:timeline",
-				},
+				// {
+				// 	name: "时间线",
+				// 	url: "/timeline/",
+				// 	icon: "material-symbols:timeline",
+				// },
 			],
 		},
 	],

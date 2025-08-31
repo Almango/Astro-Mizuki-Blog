@@ -1,0 +1,230 @@
+---
+import { getEntry, render } from "astro:content";
+import Markdown from "@components/misc/Markdown.astro";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import Comment from "@components/comment/index.astro";
+
+const aboutPost = await getEntry("spec", "about");
+
+if (!aboutPost) {
+	throw new Error("About page content not found");
+}
+
+const { Content } = await render(aboutPost);
+---
+
+<MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
+  <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+    <div class="card-base z-10 px-9 py-6 relative w-full">
+      <h1 class="text-3xl font-bold text-dark mb-2">Minecraft状态</h1>
+      <p class="text-gray-600 mb-8">佳莉の敦世界</p>
+
+      <!-- 顶部统计方块 -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+        <!-- 服务器版本 -->
+        <div class="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-4 transition-all duration-300">
+          <div class="flex items-center gap-3">
+            <div class="text-2xl">🎮</div>
+            <div>
+              <div class="text-2xl font-bold text-blue-600 dark:text-blue-400" id="server-version">1.21.6</div>
+              <div class="text-sm text-blue-600/70 dark:text-blue-400/70">服务器版本</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 插件服 -->
+        <div class="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg p-4 transition-all duration-300">
+          <div class="flex items-center gap-3">
+            <div class="text-2xl">🔌</div>
+            <div>
+              <div class="text-2xl font-bold text-green-600 dark:text-green-400">插件服</div>
+              <div class="text-sm text-green-600/70 dark:text-green-400/70">核心类型</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 在线人数 -->
+        <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/20 rounded-lg p-4 transition-all duration-300">
+          <div class="flex items-center gap-3">
+            <div class="text-2xl">👥</div>
+            <div>
+              <div class="text-2xl font-bold text-yellow-600 dark:text-yellow-400" id="player-count">加载中...</div>
+              <div class="text-sm text-yellow-600/70 dark:text-yellow-400/70">在线人数</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 正版验证 -->
+        <div class="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg p-4 transition-all duration-300 ">
+          <div class="flex items-center gap-3">
+            <div class="text-2xl">🔒</div>
+            <div>
+              <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">否</div>
+              <div class="text-sm text-purple-600/70 dark:text-purple-400/70">正版验证</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 服务器详情 -->
+      <div style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md mb-8 transition-all duration-300 ">
+        <h2 class="text-2xl font-bold text-dark dark:text-white mb-4">服务器详情</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">以原版纯生存为核心的长期性公益服务器，服务器限制性较少，反对作弊，在这里你可以着手与好友组建自己的小镇，探案更多未开发的大陆。【<span style="color:hotpink">原版，纯净生存，长期，公益，插件，养老，不删档</span>】。</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">服务器定期更新维护，确保版本稳定，同时有专业的管理团队维护秩序，营造和谐的游戏环境。欢迎各位玩家加入，一起探索MC的世界！</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">QQ交流群：1153119841</p>
+        <div class="mt-6">
+          <a href="http://g1-10.xyeidc.cn:20987/#world:-34:0:45:506:0:0:0:0:perspective" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-all duration-300">查看卫星图</a>
+          <a href="#" id="copyLink" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-all duration-300">加入服务器</a>
+        </div>
+      </div>
+      <div style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md mb-8 transition-all duration-300 ">
+
+      <p>写入中............</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</MainGridLayout>
+
+
+
+<script>
+const copyLink = document.getElementById('copyLink');
+        // 要复制的文字内容
+        const textToCopy = 'g1-10.xyeidc.cn:20504';
+
+        copyLink.addEventListener('click', function (event) {
+            // 阻止 <a> 标签默认的跳转行为
+            event.preventDefault();
+            
+            // 使用 Clipboard API 的 writeText 方法复制文字
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => {
+                    alert('服务器IP复制成功！');
+                })
+                .catch(err => {
+                    alert('复制失败：', err);
+                });
+        });
+
+  // 页面加载完成后执行
+  document.addEventListener('DOMContentLoaded', function() {
+    const serverAddress = 'g1-10.xyeidc.cn:20504';
+    // 初始加载服务器信息
+    queryServer(serverAddress);
+    // 每30秒刷新一次服务器信息
+    setInterval(() => queryServer(serverAddress), 30000);
+  });
+
+  // 查询服务器信息
+  function queryServer(address) {
+    const url = `https://api.mcsrvstat.us/2/${address}`;
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        const players = data.players || { online: 0, max: 100, list: [], uuid: {} };
+        updateServerInfo({...data, players});
+      })
+      .catch(error => {
+        console.error('获取服务器信息失败:', error);
+        document.getElementById('players-list').innerHTML = `
+          <div class="no-players">
+            <i class="fas fa-exclamation-circle"></i> 加载玩家信息失败
+          </div>
+        `;
+      });
+  }
+
+  // 从mcuuid.net获取UUID（用于头像）
+  function getAvatarUUID(playerName) {
+    return fetch(`https://mcuuid.net/api/nick/${playerName}`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('获取头像UUID失败');
+        }
+        return response.json();
+      })
+      .then(data => {
+        // 返回正版UUID（不含连字符）
+        return data.id.replace(/-/g, '');
+      })
+      .catch(error => {
+        console.error(`获取${playerName}的头像UUID失败:`, error);
+        return null;
+      });
+  }
+
+  // 更新服务器信息显示
+  function updateServerInfo(data) {
+    // 更新版本信息
+    if (data.version) {
+      document.getElementById('server-version').textContent = data.version;
+    }
+    
+    // 更新在线人数
+    document.getElementById('player-count').textContent = `${data.players.online}/${data.players.max}`;
+    document.getElementById('current-players').textContent = data.players.online;
+    document.getElementById('max-players').textContent = data.players.max;
+    
+    // 更新玩家列表
+    const playersListContainer = document.getElementById('players-list');
+    
+    if (data.players.online > 0 && data.players.list.length > 0) {
+      playersListContainer.innerHTML = '';
+      
+      // 为每个玩家创建元素
+      data.players.list.forEach(async (player) => {
+        // 获取UUID信息
+        let displayUuid = data.players.uuid && data.players.uuid[player] 
+          ? data.players.uuid[player]
+          : '未知UUID';
+        const formattedDisplayUuid = formatUUID(displayUuid.replace(/-/g, ''));
+        
+        // 获取头像UUID
+        const avatarUuid = await getAvatarUUID(player);
+        let avatarUrl = `https://minotar.net/avatar/${player}/100`; // 备用头像
+        if (avatarUuid) {
+          avatarUrl = `https://crafthead.net/avatar/${avatarUuid}`;
+        }
+        
+        // 创建玩家元素
+        const playerElement = document.createElement('div');
+        playerElement.className = 'player-item bg-white dark:bg-gray-700';
+        playerElement.innerHTML = `
+          <div class="tooltip">点击复制UUID</div>
+          <img class="player-avatar loading-avatar" 
+               src="${avatarUrl}" 
+               alt="${player}的头像"
+               onerror="this.src='https://minotar.net/avatar/${player}/100'; this.classList.remove('loading-avatar')"
+               onload="this.classList.remove('loading-avatar')">
+          <div class="player-info">
+            <p class="player-name">
+              <i class="fas fa-circle player-status"></i> ${player}
+            </p>
+            <p class="player-uuid" onclick="copyText('${displayUuid.replace(/-/g, '') || formattedDisplayUuid}')">${formattedDisplayUuid}</p>
+          </div>
+        `;
+        
+        playersListContainer.appendChild(playerElement);
+      });
+    } else {
+      playersListContainer.innerHTML = `
+        <div class="no-players bg-gray-50 dark:bg-gray-800 rounded-lg p-6 text-center col-span-full">
+          <i class="fas fa-user-slash"></i> 当前没有玩家在线
+        </div>
+      `;
+    }
+  }
+
+  // 格式化UUID为带连字符的标准格式
+  function formatUUID(uuid) {
+    if (uuid.length === 32) {
+      return `${uuid.substr(0,8)}-${uuid.substr(8,4)}-${uuid.substr(12,4)}-${uuid.substr(16,4)}-${uuid.substr(20)}`;
+    }
+    return uuid;
+  }
+
+  
+</script>

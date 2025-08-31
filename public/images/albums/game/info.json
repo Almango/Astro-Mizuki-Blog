@@ -1,0 +1,93 @@
+{
+	"mode": "external",
+	"title": "游戏记录",
+	"description": "记录生活中的美好瞬间",
+	"date": "2028-08-31",
+	"location": "地球Online",
+	"tags": ["游戏", "记录"],
+	"layout": "masonry",
+	"columns": 3,
+	"cover": "https://gitee.com/almango/image-bed/raw/master/album/game/2025-07-29_20.10.33.webp",
+	"photos": [
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/2025-06-01_18.31.44.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/2025-07-29_20.10.33.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/2025-07-29_20.54.07.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_mrzh_2.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_mrzh_1.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_mc_2.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_mc_1.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_huanta_1.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_hpjy_4.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_hpjy_3.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_hpjy_2.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_hpjy_1.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_cjzc_1.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_zzz_3.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_zzz_2.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_zzz_1.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_mrzh_6.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_mrzh_5.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_mrzh_4.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/game/game_mrzh_3.webp",
+			"alt": "1"
+		}
+	]
+}

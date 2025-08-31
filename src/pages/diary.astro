@@ -15,26 +15,37 @@ const moments = [
 		content: "把Hexo中使用过的Waline评论数据导入到了Twikoo，虽然不支持导入，好在可以使用python批量修改格式（很可惜，只保留了友链和关于中的评论数据。）",
 		date: "2025-08-23T14:31:12Z",
 	},
+	{
+		id: 2,
+		content: "主题版本更新至v4.6",
+		date: "2025-08-31 14:31:12",
+	},
 ];
 
 // 时间格式化函数
 function formatTime(dateString: string): string {
-	const now = new Date();
-	const date = new Date(dateString);
-	const diffInMinutes = Math.floor(
-		(now.getTime() - date.getTime()) / (1000 * 60),
-	);
+  const now = new Date();
+  const date = new Date(dateString);
+  
+  // 统一转换为 UTC 时间戳进行计算
+  const diffInMinutes = Math.floor(
+    (now.getTime() - date.getTime()) / (1000 * 60)
+  );
 
-	if (diffInMinutes < 60) {
-		return `${diffInMinutes}${i18n(I18nKey.diaryMinutesAgo)}`;
-	}
-	if (diffInMinutes < 1440) {
-		// 24小时
-		const hours = Math.floor(diffInMinutes / 60);
-		return `${hours}${i18n(I18nKey.diaryHoursAgo)}`;
-	}
-	const days = Math.floor(diffInMinutes / 1440);
-	return `${days}${i18n(I18nKey.diaryDaysAgo)}`;
+  // 处理未来时间的情况（避免出现负数）
+  if (diffInMinutes < 0) {
+    return i18n(I18nKey.diaryJustNow); // 表示"刚刚"或直接返回0分钟前
+  }
+
+  if (diffInMinutes < 60) {
+    return `${diffInMinutes}${i18n(I18nKey.diaryMinutesAgo)}`;
+  }
+  if (diffInMinutes < 1440) {
+    const hours = Math.floor(diffInMinutes / 60);
+    return `${hours}${i18n(I18nKey.diaryHoursAgo)}`;
+  }
+  const days = Math.floor(diffInMinutes / 1440);
+  return `${days}${i18n(I18nKey.diaryDaysAgo)}`;
 }
 ---
 

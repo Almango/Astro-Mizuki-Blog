@@ -1,0 +1,153 @@
+{
+	"mode": "external",
+	"title": "生活随拍",
+	"description": "记录生活中的美好瞬间",
+	"date": "2028-08-31",
+	"location": "江西南昌",
+	"tags": ["风景", "摄影", "自然"],
+	"layout": "masonry",
+	"columns": 3,
+	"cover": "https://gitee.com/almango/image-bed/raw/master/album/life/life_cloud_1.webp",
+	"photos": [
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_cloud_1.webp",
+			"alt": "山顶日落"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_ganxibowuguan_1.webp",
+			"alt": "1"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_cloud_4.webp",
+			"alt": "2"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_cloud_3.webp",
+			"alt": "3"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_cloud_2.webp",
+			"alt": "4"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_cloud_1.webp",
+			"alt": "5"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_554_2.webp",
+			"alt": "6"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_554_1.webp",
+			"alt": "7"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_81_2.webp",
+			"alt": "8"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_81_1.webp",
+			"alt": "9"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/lie_run_1.webp",
+			"alt": "10"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_yese.webp",
+			"alt": "11"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_xiannvu_2.webp",
+			"alt": "13"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_xiannvu_1.webp",
+			"alt": "14"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_wanshougong_2.webp",
+			"alt": "15"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_wanshougong_1.webp",
+			"alt": "16"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_snowman_2.webp",
+			"alt": "17"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_snowman_1.webp",
+			"alt": "18"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_snow_4.webp",
+			"alt": "19"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_snow_2.webp",
+			"alt": "20"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_snow_1.webp",
+			"alt": "21"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_sky_3.webp",
+			"alt": "22"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_sky_1.webp",
+			"alt": "23"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_riluo_3.webp",
+			"alt": "24"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_pipahu_2.webp",
+			"alt": "25"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_pipahu_1.webp",
+			"alt": "26"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_luori_3.webp",
+			"alt": "27"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_luori_2.webp",
+			"alt": "28"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_luori_1.webp",
+			"alt": "29"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_hushui_1.webp",
+			"alt": "30"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_huanghun_2.webp",
+			"alt": "31"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_huanghun_1.webp",
+			"alt": "32"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_ganxibowuguan_4.webp",
+			"alt": "33"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_ganxibowuguan_3.webp",
+			"alt": "34"
+		},
+		{
+			"src": "https://gitee.com/almango/image-bed/raw/master/album/life/life_ganxibowuguan_2.webp",
+			"alt": "35"
+		}
+	]
+}

@@ -26,7 +26,6 @@ category: Minecraft
 - 下载地址1：[TAB（Modrinth）](https://modrinth.com/plugin/tab-was-taken)
 - 下载地址2：[TAB（Spigot）](https://www.spigotmc.org/resources/tab-1-5-1-21-5.57806/)
 
-![sss](https://mango-photos.tos-cn-beijing.volces.com/icon.png)
 ![sss](https://gcore.jsdelivr.net/gh/Almango/Blog_imgbed@main/post/post_plugins_1.png)
 
 1. 首先是TAB美化插件：[TAB (一个有效的一体化解决方案)](https://modrinth.com/plugin/tab-was-taken)
