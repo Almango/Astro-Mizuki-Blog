@@ -176,7 +176,7 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "项目展示",
-					url: "/projects/",
+					url: "/mc/",
 					icon: "material-symbols:work",
 				},
 				{
