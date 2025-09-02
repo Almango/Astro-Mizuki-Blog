@@ -98,8 +98,8 @@
     #banner-wrapper~* #navbar[data-transparent-mode="semifull"].scrolled>div,
     body:has(#banner-wrapper) #navbar[data-transparent-mode="semifull"].scrolled>div {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         border-radius: 0.75rem !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
@@ -139,8 +139,8 @@
     #banner-wrapper~* #navbar[data-transparent-mode="semifull"][data-is-home="true"].scrolled>div,
     body:has(#banner-wrapper) #navbar[data-transparent-mode="semifull"][data-is-home="true"].scrolled>div {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         border-radius: 0.75rem !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
@@ -173,8 +173,8 @@
     /* 滚动状态：下滑后变为半透明圆角 */
     :root.dark #banner-wrapper~* #navbar[data-transparent-mode="semifull"].scrolled>div,
     :root.dark body:has(#banner-wrapper) #navbar[data-transparent-mode="semifull"].scrolled>div {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 }
@@ -204,8 +204,8 @@
     /* 滚动状态：下滑后变为半透明圆角 */
     :root.dark #banner-wrapper~* #navbar[data-transparent-mode="semifull"][data-is-home="true"].scrolled>div,
     :root.dark body:has(#banner-wrapper) #navbar[data-transparent-mode="semifull"][data-is-home="true"].scrolled>div {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 }
@@ -249,8 +249,8 @@
     #banner-wrapper~* .dropdown-content,
     body:has(#banner-wrapper) .dropdown-content {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
@@ -258,8 +258,8 @@
     #banner-wrapper~* #display-setting,
     body:has(#banner-wrapper) #display-setting {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
@@ -269,8 +269,8 @@
     #banner-wrapper~* #nav-menu-panel,
     body:has(#banner-wrapper) #nav-menu-panel {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
@@ -278,8 +278,8 @@
     #banner-wrapper~* #translate-panel,
     body:has(#banner-wrapper) #translate-panel {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
@@ -287,8 +287,8 @@
     #banner-wrapper~* #mobile-toc-panel,
     body:has(#banner-wrapper) #mobile-toc-panel {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
@@ -296,8 +296,8 @@
     #banner-wrapper~* #search-panel,
     body:has(#banner-wrapper) #search-panel {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 }
@@ -309,8 +309,8 @@
     #banner-wrapper~* #navbar[data-is-home="true"] .dropdown-content,
     body:has(#banner-wrapper) #navbar[data-is-home="true"] .dropdown-content {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
@@ -318,8 +318,8 @@
     #banner-wrapper~* #navbar[data-is-home="true"]~* #display-setting,
     body:has(#banner-wrapper) #navbar[data-is-home="true"]~* #display-setting {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
@@ -328,40 +328,40 @@
     /* 手机端导航菜单半透明效果 */
     body:has(#banner-wrapper) #navbar[data-is-home="true"] #nav-menu-panel {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
     /* 翻译组件面板半透明效果 */
     body:has(#banner-wrapper) #navbar[data-is-home="true"] #translate-panel {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
     /* 手机端MD导航菜单面板半透明效果 */
     body:has(#banner-wrapper) #navbar[data-is-home="true"] #mobile-toc-panel {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
     /* 搜索面板半透明效果 */
     body:has(#banner-wrapper) #navbar[data-is-home="true"] #search-panel {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 
     /* 主题色设置面板半透明效果 */
     body:has(#banner-wrapper) #navbar[data-is-home="true"] #display-setting {
         backdrop-filter: blur(20px) !important;
-        background: rgba(255, 255, 255, 0.55) !important;
-        border: 1px solid rgba(255, 255, 255, 0.55) !important;
+        background: rgba(255, 255, 255) !important;
+        border: 1px solid rgba(255, 255, 255) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
     }
 }
@@ -373,16 +373,16 @@
     /* 二级菜单暗色主题半透明效果 */
     :root.dark #banner-wrapper~* .dropdown-content,
     :root.dark body:has(#banner-wrapper) .dropdown-content {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
     /* 主题色设置面板暗色主题半透明效果 */
     :root.dark #banner-wrapper~* #display-setting,
     :root.dark body:has(#banner-wrapper) #display-setting {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
@@ -391,32 +391,32 @@
     /* 手机端导航菜单暗色主题半透明效果 */
     :root.dark #banner-wrapper~* #nav-menu-panel,
     :root.dark body:has(#banner-wrapper) #nav-menu-panel {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
     /* 翻译组件面板暗色主题半透明效果 */
     :root.dark #banner-wrapper~* #translate-panel,
     :root.dark body:has(#banner-wrapper) #translate-panel {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
     /* 手机端MD导航菜单面板暗色主题半透明效果 */
     :root.dark #banner-wrapper~* #mobile-toc-panel,
     :root.dark body:has(#banner-wrapper) #mobile-toc-panel {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
     /* 搜索面板暗色主题半透明效果 */
     :root.dark #banner-wrapper~* #search-panel,
     :root.dark body:has(#banner-wrapper) #search-panel {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 }
@@ -427,16 +427,16 @@
     /* 二级菜单暗色主题半透明效果 */
     :root.dark #banner-wrapper~* #navbar[data-is-home="true"] .dropdown-content,
     :root.dark body:has(#banner-wrapper) #navbar[data-is-home="true"] .dropdown-content {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
     /* 主题色设置面板暗色主题半透明效果 */
     :root.dark #banner-wrapper~* #navbar[data-is-home="true"]~* #display-setting,
     :root.dark body:has(#banner-wrapper) #navbar[data-is-home="true"]~* #display-setting {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
@@ -444,43 +444,43 @@
 
     /* 手机端导航菜单暗色主题半透明效果 */
     :root.dark body:has(#banner-wrapper) #navbar[data-is-home="true"] #nav-menu-panel {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
     /* 翻译组件面板暗色主题半透明效果 */
     :root.dark body:has(#banner-wrapper) #navbar[data-is-home="true"] #translate-panel {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
     /* 手机端MD导航菜单面板暗色主题半透明效果 */
     :root.dark body:has(#banner-wrapper) #navbar[data-is-home="true"] #mobile-toc-panel {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
     /* 搜索面板暗色主题半透明效果 */
     :root.dark body:has(#banner-wrapper) #navbar[data-is-home="true"] #search-panel {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
     /* 主题色设置面板暗色主题半透明效果 */
     :root.dark body:has(#banner-wrapper) #navbar[data-is-home="true"] #display-setting {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 
     /* 搜索面板暗色主题半透明效果 */
     :root.dark body:has(#banner-wrapper) #navbar[data-is-home="true"] #search-panel {
-        background: rgba(0, 0, 0, 0.55) !important;
-        border: 1px solid rgba(0, 0, 0, 0.55) !important;
+        background: rgba(0, 0, 0) !important;
+        border: 1px solid rgba(0, 0, 0) !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     }
 }

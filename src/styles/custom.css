@@ -14,3 +14,7 @@
         border-radius: 0 0 0.75rem 0.75rem !important;
     }
 }
+
+#mobile-toc-switch{
+    display: none;
+}
