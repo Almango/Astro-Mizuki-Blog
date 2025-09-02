@@ -14,37 +14,3 @@
         border-radius: 0 0 0.75rem 0.75rem !important;
     }
 }
-
-/* 移动端半透明模式 - 仅在有banner且为首页时启用 */
-@media (max-width: 1023px) {
-
-    #banner-wrapper~* #navbar[data-transparent-mode="semi"][data-is-home="true"]>div,
-    body:has(#banner-wrapper) #navbar[data-transparent-mode="semi"][data-is-home="true"]>div {
-        background: rgba(255, 255, 255) !important;
-        border: none !important;
-        border-radius: 0 0 0.75rem 0.75rem !important;
-    }
-}
-
-/* 桌面端暗色主题下的半透明模式 - 在有banner时启用 */
-@media (min-width: 1024px) {
-
-    :root.dark #banner-wrapper~* #navbar[data-transparent-mode="semi"]>div,
-    :root.dark body:has(#banner-wrapper) #navbar[data-transparent-mode="semi"]>div {
-        background: rgba(0, 0, 0) !important;
-        border: none !important;
-        border-radius: 0 0 0.75rem 0.75rem !important;
-    }
-}
-
-
-@media (max-width: 1023px) {
-
-    :root.dark #banner-wrapper~* #navbar[data-transparent-mode="semi"][data-is-home="true"]>div,
-    :root.dark body:has(#banner-wrapper) #navbar[data-transparent-mode="semi"][data-is-home="true"]>div {
-        background: rgba(0, 0, 0) !important;
-        border: none !important;
-        border-radius: 0 0 0.75rem 0.75rem !important;
-    }
-
-}
