@@ -1,0 +1,24 @@
+/* 缩小导航栏与容器宽度 */
+.max-w-\[var\(--page-width\)\] {
+    max-width: 75rem !important;
+}
+
+@media (min-width: 1024px) {
+    #banner-wrapper ~ * #navbar[data-transparent-mode="semi"] > div,
+    body:has(#banner-wrapper) #navbar[data-transparent-mode="semi"] > div {
+        background: rgba(255, 255, 255) !important;
+        border: none !important;
+        border-radius: 0 0 0.75rem 0.75rem !important;
+    }
+}
+
+@media (max-width: 1023px) {
+    #banner-wrapper ~ * #navbar[data-transparent-mode="semi"][data-is-home="true"] > div,
+    body:has(#banner-wrapper) #navbar[data-transparent-mode="semi"][data-is-home="true"] > div {
+    background: rgba(255, 255, 255) !important;
+    border: none !important;
+    border-radius: 0.75rem !important;
+    border-radius: 0 0 0.75rem 0.75rem !important;
+    }
+
+}
